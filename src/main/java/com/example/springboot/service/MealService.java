@@ -28,16 +28,16 @@ public class MealService {
         mealDao.save(meal);
     }
 
-    public List<Meal> getMeals() {
-        return mealDao.findAll();
-    }
-
     public void deleteMeal(long id) {
         mealDao.deleteById(id);
     }
 
     public void updateMeal(Meal meal) {
         mealDao.save(meal);
+    }
+
+    public List<Meal> getMeals() {
+        return mealDao.findAll();
     }
 
     public List<Meal> getSummerMeals() {
